@@ -1,0 +1,23 @@
+#framemapa {
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 350px;
+}
+.botoes_mapa{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  button{
+    padding: 5px;
+    background-color: $sec;
+    color: $branco;
+    border-radius: 6px;
+    margin: 5px;
+    &:hover{
+      background-color: $cinza;
+      color: $preto;
+    }
+  }
+}

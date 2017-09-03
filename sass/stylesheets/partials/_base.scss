@@ -1,0 +1,183 @@
+.area{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.content {
+	width: 98%;
+	position: relative;
+	clear: both;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.content_10 {
+	@extend .content;
+	max-width: 1080px;
+}
+.content_9 {
+	@extend .content;
+	max-width: 960px;
+}
+.content_7 {
+	@extend .content;
+	max-width: 720px;
+}
+.botao {
+	padding: 10px 15px;
+	background-color: $prim;
+	color: $sec;
+	border: 1px solid $sec;
+	&:hover {
+		color: $prim;
+		background-color: $sec;
+		border: 1px solid $prim;
+	}
+	&.inversa {
+		color: $prim;
+		background-color: $sec;
+		border: 1px solid $prim;
+		&:hover {
+			background-color: $prim;
+			color: $sec;
+			border: 1px solid $sec;
+		}
+	}
+}
+.responsivo_dividido {
+  position: relative;
+  margin-right: 2%;
+  &.resp_1 {
+    width: 100%;
+    clear: both;
+  }
+  &.resp_2 {
+    width: 48%;
+    float: left;
+  }
+  &.resp_3 {
+    width: 32%;
+    float: left;
+  }
+  &.resp_4 {
+    width: 23.5%;
+    float: left;
+  }
+  &.resp_5 {
+    width: 18.4%;
+    float: left;
+  }
+  &.last {
+    margin-right: 0;
+  }
+}
+.area.titulo_area{
+max-width: 1280px;
+width: 100%;
+margin: 20px auto;
+text-align: center;
+}
+.setas {
+	position: fixed;
+	top: 50%;
+	@include vertmiddle();
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #fff;
+	border-radius: 60px;
+	width: 60px;
+	height: 60px;
+	&.seta_direita {
+		right: 0;
+		background-image: url("../images/seta_dir.png");
+	}
+	&.seta_esquerda {
+		left: 0;
+		background-image: url("../images/sera_esq.png");
+	}
+}
+.node-type-p-gina-do-quadrinho .content img {
+	width: 100%;
+	height: auto;
+}
+// .front .content .view {
+// 	position: relative;
+// 	clear: both;
+// 	width: 100%;
+// 	img {
+// 		width: 100%;
+// 		height: auto;
+// 	}
+// }
+.front .content.meio_alin {
+	position: relative;
+	width: 98%;
+	max-width: 800px;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+	.view {
+		display: inline-block;
+		max-width: 350px;
+		width: 46%;
+		margin: 2%;
+		position: relative;
+		.views-row {
+			width: 100%;
+			position: relative;
+			clear: both;
+			.botao_inicio {
+				position: relative;
+				clear: both;
+				width: 100%;
+				padding-bottom: 57.14%;
+				background-position: center center;
+				background-size: cover;
+				&.port {
+					background-image: url("../images/IdiomaPORT.png");
+				}
+				&.eng {
+					background-image: url("../images/IdiomaINGL.png");
+				}
+			}
+		}
+	}
+}
+.comments {
+	@extend .content;
+}
+.front #menu_prin, .front #lang_sel {
+	display: none;
+}
+.view.arquivo {
+	position: relative;
+	clear: both;
+	width: 98%;
+	max-width: 960px;
+	margin: 20px auto;
+	.views-row {
+		position: relative;
+		float: left;
+		width: 31.3%;
+		margin: 1%;
+		box-sizing: border-box;
+		padding: 0;
+		.toda_pag {
+			position: relative;
+			clear: both;
+			width: 100%;
+			overflow: hidden;
+			text-align: center;
+
+			img {
+				width: 100%;
+				height: auto;
+				position: relative;
+				clear: both;
+				display: block;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}

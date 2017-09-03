@@ -1,0 +1,184 @@
+footer{
+  position: relative;
+  width: 100%;
+  background-color: $sec;
+  position: relative;
+  clear: both;
+  color: $prim;
+  overflow: hidden;
+	clear: both;
+	height: auto;
+	ul{
+		&.menu{
+			clear: none;
+			float: right;
+			margin-right: 30px;
+		}
+	}
+  .content{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 60px 0;
+  background-size: cover;
+	overflow: hidden;
+	position: relative;
+  }
+}
+
+.col_footer{
+	position: relative;
+  	width: 31%;
+  	display: inline-block;
+  	margin: 2% 1%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.footer_baixo{
+	width: 100%;
+	height: auto;
+	border-top: 5px solid $prim;
+	box-sizing: border-box;
+  	padding: 15px;
+}
+
+.titulo_footer{
+	font-family: $bold;
+	color: $prim;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.txt_footer{
+	color: $cinza;
+	font-family: $light;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 5px;
+	a & {
+		color: $cinza;
+	}
+	a &:hover{
+		color: $prim;
+	}
+
+    &.contato{
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 3px;
+    }
+}
+
+.linha_contatos{
+    width: 100%;
+    position: relative;
+    &:hover{
+        .img_footer{
+            background-position: top left;
+        }
+        .txt_footer{
+            // color: $prim;
+        }
+    }
+}
+
+.img_footer{
+    width: 20px;
+    height: 25px;
+    vertical-align: top;
+    display: inline-block;
+    &.endereco{
+        background-image: url('../images/footer/pin_contato.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+    &.mail{
+        background-image: url('../images/footer/mail_contato.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+    &.telefone{
+        background-image: url('../images/footer/fone_contato.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+}
+
+#seta_footer{
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	margin-left: -15px;
+	z-index: 100;
+}
+
+#logo_footer {
+	margin-bottom: 10px;
+}
+
+hr.linha_footer{
+	height: 3px;
+	width: 40px;
+	background-color: $prim;
+	margin-bottom: 30px;
+}
+
+.social_footer{
+	height: 25px;
+	width: 28px;
+	display: inline-block;
+}
+
+.face{
+	background-image: url('../images/footer/facebook_footer.png');
+	background-position: center bottom;
+
+	&:hover{
+	background-position: center top;
+	}
+}
+
+
+.linkedin{
+	background-image: url('../images/footer/linkedin_footer.png');
+	background-position: center bottom;
+
+	&:hover{
+		background-position: center top;
+	}
+}
+
+.insta{
+	background-image: url('../images/footer/insta_2_footer.png');
+	background-position: center bottom;
+
+	&:hover{
+		background-position: center top;
+	}
+}
+
+.conteudo_m{
+	position: relative;
+	clear: both;
+	width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 2;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .padding_footer_lat {
+    padding-bottom: 75px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .padding_footer {
+    padding-bottom: 65px;
+  }
+  .padding_footer_lat {
+    padding-bottom: 65px;
+  }
+}
